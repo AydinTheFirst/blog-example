@@ -4,9 +4,9 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
+  Link,
 } from "@nextui-org/react";
 import { LucideUser } from "lucide-react";
-import { Link } from "react-router-dom";
 import useSWR from "swr";
 
 import { useDeviceType } from "@/hooks";
