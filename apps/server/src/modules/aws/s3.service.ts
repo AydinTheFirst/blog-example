@@ -27,14 +27,13 @@ export class S3Service implements OnModuleInit {
   }
 
   async deleteFiles(Keys: string[]) {
-    const result = await this.s3.deleteObjects({
-      Bucket: process.env.AWS_BUCKET_NAME!,
-      Delete: {
-        Objects: Keys.map((Key) => ({ Key })),
-      },
-    });
+    await Promise.all(
+      Keys.map(async (Key) => {
+        await this.deleteFile(Key);
+      })
+    );
 
-    return result;
+    return;
   }
 
   async getFile(Key: string) {

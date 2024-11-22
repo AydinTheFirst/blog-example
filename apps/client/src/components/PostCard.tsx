@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 import useSWR from "swr";
 
 import { Post, User } from "@/types";
+import { getFileUrl } from "@/utils";
 
 interface PostCardProps {
   post: Post;
@@ -30,7 +31,7 @@ export const PostCard = ({ post }: PostCardProps) => {
         <Image
           alt={post.title}
           className="h-48 w-full object-cover"
-          src={post.images[0] || "/placeholder.jpg"}
+          src={getFileUrl(post.images[0])}
         />
       </CardHeader>
       <CardBody className="grid gap-3">

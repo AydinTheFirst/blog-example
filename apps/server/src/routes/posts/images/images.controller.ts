@@ -15,7 +15,7 @@ import { AuthGuard } from "@/common/guards";
 
 import { ImagesService } from "./images.service";
 
-@Controller(":postId/images")
+@Controller("posts/:postId/images")
 @UseGuards(AuthGuard)
 export class ImagesController {
   constructor(private readonly imagesService: ImagesService) {}

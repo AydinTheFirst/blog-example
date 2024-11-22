@@ -7,4 +7,4 @@ import { ImagesService } from "./images.service";
   controllers: [ImagesController],
   providers: [ImagesService],
 })
-export class ProductImagesModule {}
+export class PostImagesModule {}
