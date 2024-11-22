@@ -3,9 +3,8 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["db:generate", "^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": ["^build", "db:generate"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"]
     },
     "lint": {
       "dependsOn": ["^lint"]
@@ -17,7 +16,11 @@
       "cache": false,
       "persistent": true
     },
-    "db:generate": {},
-    "db:push": {}
+    "db:generate": {
+      "cache": false
+    },
+    "db:push": {
+      "cache": false
+    }
   }
 }
