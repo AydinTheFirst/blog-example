@@ -19,5 +19,3 @@ It uses react for the frontend and nestjs for the backend. The ORM is prisma and
 ## Live Demo
 
 https://blog.aydinthefirst.com
-
-## Planned Features
