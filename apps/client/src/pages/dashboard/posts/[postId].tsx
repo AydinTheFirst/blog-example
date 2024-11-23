@@ -4,6 +4,7 @@ import {
   CardBody,
   CardHeader,
   Input,
+  Link,
   Progress,
   Select,
   SelectItem,
@@ -91,6 +92,21 @@ const ViewPost = () => {
             <Textarea
               className="col-span-12"
               defaultValue={post ? post.content : ""}
+              description={
+                <p className="text-sm">
+                  Supports HTML, Markdown, and plain text.{" "}
+                  <Link
+                    href="https://www.markdownguide.org/basic-syntax/"
+                    isExternal
+                  >
+                    Learn Markdown
+                  </Link>
+                  .{" "}
+                  <Link href="https://wysiwyghtml.com/" isExternal>
+                    Try HTML Editor
+                  </Link>
+                </p>
+              }
               isRequired
               label="Content"
               name="content"
