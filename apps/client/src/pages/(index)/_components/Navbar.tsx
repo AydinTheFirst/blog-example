@@ -98,7 +98,7 @@ export default function Navbar() {
         />
         <NavbarBrand as={Link} className="text-foreground" href={"/"}>
           <Logo className="h-14" />
-          <strong className="mx-1 text-xl">AydinTheFirst</strong>
+          <strong className="mx-1 text-xl">BLOG</strong>
         </NavbarBrand>
       </NavbarContent>
 

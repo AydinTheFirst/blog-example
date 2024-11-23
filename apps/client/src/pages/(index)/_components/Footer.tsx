@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-12 gap-10">
           <div className="col-span-12 md:col-span-6">
             <h4 className="text-2xl font-bold">About</h4>
-            <p className="max-w-xs">
+            <p className="hidden max-w-xs">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               suscipit quo voluptatibus ratione inventore laborum aliquid
               excepturi ipsam a fugit incidunt, obcaecati nam vel, sit, esse
@@ -64,14 +64,14 @@ const Footer = () => {
           </div>
         </div>
         <Divider className="my-10" />
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           <div>
             <p className="text-gray-500">
               &copy; {new Date().getFullYear()} AydinTheFirst. All rights
               reserved.
             </p>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center md:justify-end">
             <ul className="flex gap-5">
               <li>
                 <Link color="foreground" href="/privacy">

@@ -28,7 +28,7 @@ export class PostsService {
         .replace(/ /g, "-")
         .replace(/[^\w-]+/g, "") +
       "-" +
-      Math.floor(Math.random() * 1000);
+      Date.now();
 
     return slug;
   }

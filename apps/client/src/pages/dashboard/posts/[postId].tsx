@@ -10,6 +10,7 @@ import {
   Textarea,
 } from "@nextui-org/react";
 import { AxiosProgressEvent } from "axios";
+import { LucideArrowLeft, LucideArrowRight, LucideTrash } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "sonner";
@@ -20,7 +21,6 @@ import Loading from "@/components/Loading";
 import http from "@/http";
 import { Post } from "@/types";
 import { getFileUrl } from "@/utils";
-import { LucideArrowLeft, LucideArrowRight, LucideTrash } from "lucide-react";
 
 const ViewPost = () => {
   const navigate = useNavigate();

@@ -22,12 +22,12 @@ export const PostCard = ({ post }: PostCardProps) => {
   const { data: author } = useSWR<User>(`/authors/${post.authorId}`);
 
   const handlePress = () => {
-    navigate(`/posts/${post.id}`);
+    navigate(`/posts/${post.slug}`);
   };
 
   return (
     <Card isHoverable isPressable onPress={handlePress}>
-      <CardHeader className="justify-center">
+      <CardHeader className="justify-center bg-content2">
         <Image
           alt={post.title}
           className="h-48 w-full object-cover"

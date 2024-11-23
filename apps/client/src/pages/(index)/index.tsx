@@ -38,7 +38,7 @@ const Featured = () => {
       <div className="">
         <h2 className="text-2xl font-bold">Featured Posts</h2>
       </div>
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {featured.map((post) => (
           <PostCard key={post.id} post={post} />
         ))}

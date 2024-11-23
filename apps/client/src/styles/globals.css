@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-reset * {
+  all: unset;
+  all: revert;
+}
